@@ -2,8 +2,8 @@
 A simple training/evaluation code of open set recognition using OpenMax (https://arxiv.org/abs/1511.06233).
 
 ## Base repositories
-We slightly modified bc_learning_image (https://github.com/mil-tokyo/bc_learning_image) for the CIFAR10 code.  
-Also, we refactored the code of the authors (https://github.com/abhijitbendale/OSDN).
+I slightly modified bc_learning_image (https://github.com/mil-tokyo/bc_learning_image) for the CIFAR10 code.  
+For OpenMax layer, I re-wrote the code from that of the authors (https://github.com/abhijitbendale/OSDN).
 
 ## Dependencies
 * Python 3+
