@@ -39,6 +39,17 @@ Below arguments are determined by a rough parameter search.
 sh scripts/test_openmax.sh 80 3 0.9
 ```
 
+## Result
+We conducted a simple experiment using CIFAR-10/100 dataset.  
+* Training: CIFAR-10 training set
+* Test: CIFAR-10 test set + CIFAR-100 test set
+
+| Method | CIFAR-10 top-1 | CIFAR-10 F1 | CIFAR-10 + CIFAR-100 top-1 | CIFAR-10 + CIFAR-100 F1 |
+|:---|---:|---:|---:|---:|
+| Softmax (closed setting) | *6.23* | *0.9376* | N/A | N/A |
+| Softmax + thresholding | **8.85** | **0.851** | 0.372 | 0.695 |
+| OpenMax | 18.0 | 0.813 | **0.214** | **0.792** |
+
 ### References
 Yuji Tokozume, Yoshitaka Ushiku, Tatsuya Harada. Between-class Learning for Image Classification.  
 The 31st IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2018.
