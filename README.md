@@ -44,11 +44,11 @@ We conducted a simple experiment using CIFAR-10/100 dataset.
 * Training: CIFAR-10 training set
 * Test: CIFAR-10 test set + CIFAR-100 test set
 
-| Method | CIFAR-10 top-1 | CIFAR-10 F1 | CIFAR-10 + CIFAR-100 top-1 | CIFAR-10 + CIFAR-100 F1 |
+| Method | CIFAR-10 top-1 (%) | CIFAR-10 F1 | CIFAR-10 + CIFAR-100 top-1 (%) | CIFAR-10 + CIFAR-100 F1 |
 |:---|---:|---:|---:|---:|
 | Softmax (closed setting) | *6.23* | *0.9376* | N/A | N/A |
-| Softmax + thresholding | **8.85** | **0.851** | 0.372 | 0.695 |
-| OpenMax | 18.0 | 0.813 | **0.214** | **0.792** |
+| Softmax + thresholding | **8.85** | **0.851** | 37.2 | 0.695 |
+| OpenMax | 18.0 | 0.813 | **21.4** | **0.792** |
 
 ### References
 Yuji Tokozume, Yoshitaka Ushiku, Tatsuya Harada. Between-class Learning for Image Classification.  
